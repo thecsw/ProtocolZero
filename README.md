@@ -14,6 +14,24 @@ favor.
 accounts. This is more advantageous as you are still able to 
 use your account afterwards. The tool *does not* delete accounts.
 
+## Usage
+
+The repo provides both a binary and a library of different services
+
+Get the repo by
+
+```sh
+go get -u github.com/thecsw/ProtocolZero
+```
+
+Then you can run the program by simply invoking `ProtocolZero`
+
+## Development
+
+You can also use the program as a library. For example,
+`github.com/thecsw/ProtocolZero/reddit` is a reddit package
+that allows you to delete all your submissions and comments.
+
 ## Supported services
 
 I wrote the first *Reddit* service for fun and it currently works
