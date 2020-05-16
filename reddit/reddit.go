@@ -72,6 +72,12 @@ func (r *P0Reddit) ClearPosts(c chan<- string) {
 	}()
 }
 
+// ClearComments deletes all comments on your account
+// You can pass a <-chan string channel so the function
+// will send you recently deleted comments' IDs
+// If your channel is fully buffered, the execution will
+// be blocked until you free your channel
+// Deletion is permanent via Reddit API
 func (r *P0Reddit) ClearComments(c chan<- string) {
 	myName := r.Reddit.Creds.Username
 	go func() {
