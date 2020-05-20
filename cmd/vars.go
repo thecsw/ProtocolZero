@@ -1,4 +1,4 @@
-package main
+package cmd
 
 // Simple strings to print out
 var (
